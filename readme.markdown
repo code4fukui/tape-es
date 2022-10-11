@@ -1,15 +1,8 @@
-# tape <sup>[![Version Badge][npm-version-svg]][package-url]</sup>
+# tape-es <sup>[![Version Badge][npm-version-svg]][package-url]</sup>
 
 tap-producing test harness for node and browsers
 
-[![github actions][actions-image]][actions-url]
-[![coverage][codecov-image]][codecov-url]
-[![dependency status][deps-svg]][deps-url]
-[![dev dependency status][dev-deps-svg]][dev-deps-url]
 [![License][license-image]][license-url]
-[![Downloads][downloads-image]][downloads-url]
-
-[![npm badge][npm-badge-png]][package-url]
 
 ![tape](https://web.archive.org/web/20170612184731if_/http://substack.net/images/tape_drive.png)
 
