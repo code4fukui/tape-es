@@ -16,25 +16,26 @@ tap-producing test harness for node and browsers
 # example
 
 ``` js
-var test = require('tape');
+import { test } from "https://code4fukui.github.io/tape-es/tape.js";
 
-test('timing test', function (t) {
+test('timing test', async function (t) {
     t.plan(2);
 
     t.equal(typeof Date.now, 'function');
     var start = Date.now();
 
-    setTimeout(function () {
-        t.equal(Date.now() - start, 100);
-    }, 100);
+  	await new Promise((resolve) => {
+      setTimeout(function () {
+        t.equal((Date.now() - start) / 10 >> 0, 100 / 10 >> 0);
+        resolve();
+      }, 100);
+    });
 });
-
 test('test using promises', async function (t) {
-    const result = await someAsyncThing();
-    t.ok(result);
+  const someAsyncThing = async () => {};
+  const result = await someAsyncThing();
+  t.ok(result);
 });
-```
-
 ```
 $ node example/timing.js
 TAP version 13
