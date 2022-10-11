@@ -1,4 +1,4 @@
-# tape-es <sup>[![Version Badge][npm-version-svg]][package-url]</sup>
+# tape-es
 
 tap-producing test harness for node and browsers
 
