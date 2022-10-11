@@ -1,6 +1,4 @@
-'use strict';
-
-var test = require('../');
+import { test } from "../tape.js";
 
 test('bind works', function (t) {
 	t.plan(2);
