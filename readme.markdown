@@ -1,6 +1,6 @@
 # tape-es
 
-tap-producing test harness for node and browsers
+tap-producing test harness for Deno (under development)
 
 [![License][license-image]][license-url]
 
