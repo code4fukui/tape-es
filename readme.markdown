@@ -24,7 +24,7 @@ test('timing test', async function (t) {
     t.equal(typeof Date.now, 'function');
     var start = Date.now();
 
-  	await new Promise((resolve) => {
+    await new Promise((resolve) => {
       setTimeout(function () {
         t.equal((Date.now() - start) / 10 >> 0, 100 / 10 >> 0);
         resolve();
