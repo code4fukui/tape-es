@@ -8,6 +8,7 @@ export const test = (title, opt, func) => {
     const tt = {
       deepEqual: (a, b) => t.assertEquals(a, b),
       equal: (a, b) => t.assertEquals(a, b),
+      same: (a, b) => t.assertEquals(a, b),
       plan: () => {},
       test: async (title, func) => await denot.step(title, () => func(tt)),
       end: () => {},
