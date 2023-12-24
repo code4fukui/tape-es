@@ -13,7 +13,9 @@ export const test = (title, opt, func) => {
       test: async (title, func) => await denot.step(title, () => func(tt)),
       end: () => {},
       pass: () => {},
-      ok: () => {},
+      ok: t.assert,
+      notOk: (a) => t.assert(!a),
+      throws: t.assertThrows,
     };
     await func(tt)
   });
